@@ -237,7 +237,7 @@ If the question is about a computer, respond for the following system details:
 I do not have root access.
 EOF
 )
-    llm_blue -s "$SYSTEM_PROMPT" -m groq-llama-3.3-70b | "$@"
+    llm_blue -s "$SYSTEM_PROMPT" -m groq-llama-3.3-70b "$@"
 }
 ```
 If you copy/paste it into the terminal, you should see colored output when you run the command `groq`.
